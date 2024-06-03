@@ -19,14 +19,14 @@ export default function DeleteModal({ id, closeDeleteModal }) {
   const onSubmitDelete = async () => {
     setIsLoading(true);
     try {
-      let response = await axios.delete(`${baseUrl}/posts/${id}`);
+      let response = await axios.delete(`${baseUrl}/${id}`);
       // console.log(response);
       deleteHandleClose();
       toast.success(`Post deleted succefully`);
       navigate("/");
     } catch (error) {
       setIsLoading(false);
-      // console.log(error);
+    //   console.log(error);
       toast.error("Something went wrong!");
     }
   };

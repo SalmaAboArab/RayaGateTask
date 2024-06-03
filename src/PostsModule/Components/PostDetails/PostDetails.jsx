@@ -49,7 +49,6 @@ export default function PostDetails() {
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const closeModal = () => {
     setOpenDeleteModal(false);
-    // setOpenViewModal(false);
   };
   return (
     <div className="w-100 vh-100 p-5">
@@ -71,7 +70,6 @@ export default function PostDetails() {
                     aria-expanded="false"
                   ></button>
                   <ul className="dropdown-menu rounded-4 py-1 px-1">
-                    {/* <li><button className='btn btn-outline-light w-100 text-start border-0 text-black' onClick={()=>{localStorage.setItem("recipeId",recipe.id);navigate(`/dashboard/recipesform/Update`);}}><i className='fa fa-edit me-2'></i>Edit</button></li> */}
                     <li>
                       <button
                         className="btn btn-outline-light w-100 text-start border-0 text-black"
