@@ -9,8 +9,6 @@ import NoData from "../../../SharedModule/Components/NoData/NoData";
 import { toast } from "react-toastify";
 
 export default function PostDetails() {
-  // getpost => posts?userId=1
-  // getcomments => posts/1/comments
   const [post, setPost] = useState([]);
   const [comments, setComments] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
